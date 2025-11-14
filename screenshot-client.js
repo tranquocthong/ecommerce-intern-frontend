@@ -8,7 +8,7 @@ const { chromium } = require('playwright');
 const axios = require('axios');
 
 // ⚠️ QUAN TRỌNG: Thay đổi URL này thành địa chỉ server của bạn
-const SERVER_URL = 'http://YOUR_IP:9000/screenshot';
+const SERVER_URL = 'https://uncolourably-subdeltoidal-elly.ngrok-free.dev/screenshot';
 
 // Ví dụ:
 // const SERVER_URL = 'http://192.168.1.100:9000/screenshot';
@@ -68,7 +68,9 @@ async function captureAndSend() {
     }, {
       timeout: 5000,
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'ngrok-skip-browser-warning': 'true'
       }
     });
 

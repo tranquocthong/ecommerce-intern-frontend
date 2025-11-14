@@ -8,11 +8,11 @@ const { chromium } = require('playwright');
 const axios = require('axios');
 
 // ⚠️ QUAN TRỌNG: Thay đổi URL này thành địa chỉ server của bạn
-const SERVER_URL = 'https://uncolourably-subdeltoidal-elly.ngrok-free.dev/screenshot';
+const SERVER_URL = 'http://10.234.59.173:9000/screenshot';
 
 // Ví dụ:
+// const SERVER_URL = 'https://uncolourably-subdeltoidal-elly.ngrok-free.dev/screenshot';
 // const SERVER_URL = 'http://192.168.1.100:9000/screenshot';
-// const SERVER_URL = 'http://yourdomain.com/screenshot';
 
 const WEBSITE_URL = 'http://localhost:3000';
 const SCREENSHOT_INTERVAL = 2000; // 2 giây
